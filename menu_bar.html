@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css_task2.css"> -->
+	<title>hw3_task2</title>
+</head>
+<style>
+	* {
+		width: 100%;
+		padding: 0;
+	}
+
+	.menu_bar {
+		width: 90px;
+		height: 100%;
+		background-color: #cccccc;
+		position: fixed;
+		top: 0;
+		left: 0;
+		color: #cccccc;
+		transition-duration: 0.2s;
+		transition-timing-function: ease;
+		transition-delay: 0.2s;
+	}
+
+	.menu_bar:hover {
+		width: 200px;
+		color: azure;
+	}
+
+	ul.list li {
+		list-style: none;
+		font-size: 15px;
+		line-height: 5px;
+		text-transform: uppercase;
+		position: relative;
+		left: 0;
+		top: 0;
+
+	}
+
+	ul.list li:hover {
+		width: auto;
+		background-color: rgba(23, 82, 135, 0.3);
+
+	}
+
+	ul.list li::before {
+		font-size: 30px;
+		padding-right: 16px;
+		margin: 0;
+		vertical-align: middle;
+	}
+
+	.list li:nth-child(1):before {
+		content: url(edite.png);
+	}
+
+
+	.list li:nth-child(2):before {
+		content: url(favoritese.png);
+	}
+
+	.list li:nth-child(3):before {
+		content: url(historye.png);
+	}
+
+
+	.list li:nth-child(4):before {
+		content: url(securitye.png);
+	}
+
+
+	.list li:nth-child(5):before {
+		content: url(settingse.png);
+	}
+
+
+	.text {
+		margin-left: 100px;
+	}
+
+	h5 {
+		text-align: left;
+		text-transform: uppercase;
+		padding-left: 25px;
+		color: azure;
+	}
+</style>
+
+<body>
+	<div class="menu_bar">
+		<h5>menu</h5>
+		<ul class="list">
+			<li>edit</li>
+			<li>favoritese</li>
+			<li>history</li>
+			<li>security</li>
+			<li><span>settings</span></li>
+		</ul>
+	</div>
+
+
+
+	<div class="text">
+		<h2>lorem</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, itaque libero. Atque ipsa distinctio ut vero
+			voluptatibus labore earum, repudiandae aliquid quis quidem veritatis laborum repellat quibusdam deserunt non
+			dolores.</p>
+		<h2>lorem</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, itaque libero. Atque ipsa distinctio ut vero
+			voluptatibus labore earum, repudiandae aliquid quis quidem veritatis laborum repellat quibusdam deserunt non
+			dolores.</p>
+		<h2>lorem</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, itaque libero. Atque ipsa distinctio ut vero
+			voluptatibus labore earum, repudiandae aliquid quis quidem veritatis laborum repellat quibusdam deserunt non
+			dolores.</p>
+		<h2>lorem</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, itaque libero. Atque ipsa distinctio ut vero
+			voluptatibus labore earum, repudiandae aliquid quis quidem veritatis laborum repellat quibusdam deserunt non
+			dolores.</p>
+		<h2>lorem</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, itaque libero. Atque ipsa distinctio ut vero
+			voluptatibus labore earum, repudiandae aliquid quis quidem veritatis laborum repellat quibusdam deserunt non
+			dolores.</p>
+	</div>
+
+</body>
+
+</html>
