@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>hw_modul_4.1_task3</title>
+	<style>
+		a {
+			display: block;
+			position: relative;
+			float: left;
+			background-image: url(pic.jpg);
+			box-sizing: border-box;
+			background-repeat: space;
+			width: 50%;
+			height: 324px;
+		}
+
+		.box {
+			display: block;
+			position: relative;
+
+			width: 50%;
+			height: 324px;
+			float: left;
+			background: rgb(227, 227, 231);
+			z-index: -1;
+		}
+
+		p {
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 37%;
+		}
+
+		a:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 200%;
+			height: 324px;
+			background: rgba(0, 0, 0, 0.5);
+			opacity: 0;
+		}
+
+		a:hover:after {
+			opacity: 1;
+			transition-duration: 0.3s;
+			transition-timing-function: ease;
+			transition-delay: 0.3s;
+		}
+
+		a:hover {
+			transition-property: background-color;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="#" class="img__link"></a>
+	<div class="box">
+		<p>Hellow, World!</p>
+	</div>
+</body>
+
+</html>
