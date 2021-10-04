@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hw_modul_4.1_task2</title>
+	<style>
+		h1 {
+			position: absolute;
+			z-index: -1;
+		}
+
+		.block {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			perspective: 1000px;
+		}
+
+		.box_left {
+			background-color: rgba(135, 45, 98, 1);
+			width: 230px;
+			height: 150px;
+			float: left;
+			border: solid 5px rgba(101, 17, 66, 1);
+			transition: 2s ease-in;
+			transform-origin: left;
+
+		}
+
+		.box_right {
+			background-color: rgba(135, 45, 98, 1);
+			width: 230px;
+			height: 150px;
+			float: left;
+			border: solid 5px rgba(101, 17, 66, 1);
+			transition: 2s ease-in-out;
+			transform-origin: right;
+		}
+
+		.block:hover .box_left {
+			transform: rotateY(60deg);
+			width: 30%;
+		}
+
+		.block:hover .box_right {
+			transform: rotateY(-60deg);
+			width: 30%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="block">
+		<h1>HELLOW</h1>
+		<div class="box_left"></div>
+		<div class="box_right"></div>
+	</div>
+</body>
+
+</html>
